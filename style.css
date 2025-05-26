@@ -1,0 +1,48 @@
+@layer base {
+  :root {
+    --textclr: #ffffff;
+    html {
+      box-sizing: border-box;
+    }
+    *,
+    *:before,
+    *:after {
+      box-sizing: border-box;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: sans-serif;
+      color: var(--textclr);
+    }
+    .wrapper {
+      background-image: url("./images/bg_img.png");
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 120vh;
+    }
+    ul {
+        list-style-type: none;
+    }
+    a {
+        text-decoration: none;
+    }
+  }
+}
+@layer nav {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid;
+        padding: 20px;
+        padding-inline: 40px;
+    }
+    nav ul {
+        display: flex;
+        gap: 20px;
+    }
+}
