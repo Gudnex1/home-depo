@@ -31,6 +31,12 @@
     a {
       text-decoration: none;
     }
+    .indie-flower-regular {
+        font-family: "Indie Flower", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
   }
 }
 @layer nav {
@@ -84,5 +90,6 @@
     line-height: 1.3rem;
     min-width: 200px;
     max-width: 650px;
+    font-size: 1rem;
   }
 }
