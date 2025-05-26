@@ -48,6 +48,9 @@
     .mb--40 {
       margin-bottom: 40px;
     }
+    .mb--15 {
+      margin-bottom: 15px;
+    }
   }
 }
 @layer nav {
@@ -156,9 +159,16 @@
     align-items: center;
     width: 250px;
   }
-  .landing--footer--text {
+
+   .landing--footer--text {
     text-align: center;
     font-size: 1rem;
     line-height: 1.3rem;
+    margin-top: 15px;
+  }
+  .landing--footer--line {
+    width: 60%;
+    height: 1px;
+    background-color: var(--textclr);
   }
 }
