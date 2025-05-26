@@ -26,31 +26,55 @@
       height: 100vh;
     }
     ul {
-        list-style-type: none;
+      list-style-type: none;
     }
     a {
-        text-decoration: none;
+      text-decoration: none;
     }
   }
 }
 @layer nav {
-    nav {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-inline: 20px;
+    align-items: center;
+  }
+  nav ul {
+    display: flex;
+    gap: 5px;
+  }
+  nav ul li a {
+    color: var(--textclr);
+  }
+  .logo--text {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  .menu {
+    border: 1px solid var(--textclr);
+    color: black;
+    padding: 7px 12px;
+    background-color: var(--textclr);
+    border-radius: 20px;
+  }
+}
+@layer texts {
+    .center {
         display: flex;
-        justify-content: space-between;
-        border: 2px solid;
-        padding: 20px;
-        padding-inline: 20px;
+        justify-content: center;
         align-items: center;
+        margin-top: 50px;
+        margin: 50px auto;
+        max-width: 475px;
+        width: 100%;
+        text-align: center;
     }
-    nav ul {
-        display: flex;
-        gap: 10px;
-    }
-    nav ul li a {
-        color: var(--textclr);
-    }
-    .logo--text {
-        font-weight: 600;
-        font-size: 1.2rem;
-    }
+  .center--text {
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+  }
 }
