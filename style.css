@@ -14,7 +14,7 @@
       padding: 0;
     }
     body {
-      font-family: sans-serif;
+      font-family: "Dosis", sans-serif;
     }
     .wrapper {
       color: var(--textclr);
@@ -23,7 +23,7 @@
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      height: 110vh;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -92,17 +92,17 @@
 
   .house {
     fill: white;
-    }
-    .logo-text {
-        font-family: Arial, sans-serif;
-        font-weight: bold;
-        fill: white;
-    }
-    .house {
-      fill: white;
-    }
   }
-
+  .logo-text {
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
+    fill: white;
+    font-weight: 100;
+  }
+  .house {
+    fill: white;
+  }
+}
 @layer texts {
   .center {
     align-self: center;
@@ -156,7 +156,7 @@
     font-size: 1rem;
   }
   .search--btn {
-    background-color: rgb(255, 27, 27);
+    background-color: #ff1b1b;
     color: var(--textclr);
     padding: 10px 30px;
     outline: none;
@@ -165,11 +165,11 @@
     width: 40%;
   }
   .animates-gradient {
-    background-image: radial-gradient(
+    background: radial-gradient(
       circle,
-      rgba(255, 255, 255, 1) 0%,
-      rgb(233, 233, 233) 30%,
-      rgba(0, 0, 0, 1) 100%
+      rgba(255, 255, 255, 1) 3%,
+      rgba(255, 222, 222, 1) 63%,
+      rgba(255, 27, 27, 1) 100%
     );
     background-clip: text;
     -webkit-background-clip: text;
@@ -181,7 +181,7 @@
 
   @keyframes gradient {
     0% {
-      background-position: 0% 50%;
+      background-position: 0% 70%;
     }
     50% {
       background-position: 100% 50%;
@@ -196,6 +196,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 20px;
   }
   .landing--footer--1,
   .landing--footer--2,
@@ -208,9 +209,10 @@
 
   .landing--footer--text {
     text-align: center;
-    font-size: 1rem;
-    line-height: 1.3rem;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
     margin-top: 15px;
+    margin-bottom: 15px;
   }
   .landing--footer--line {
     width: 60%;
@@ -218,6 +220,9 @@
     background-color: var(--textclr);
   }
   .mobile {
+    display: none;
+  }
+  .dontdisplay {
     display: none;
   }
 }
@@ -245,7 +250,8 @@
     justify-content: center;
   }
   .logo--large--text {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    font-weight: 600;
   }
   .logo--mobile {
     display: none;
@@ -253,7 +259,7 @@
   .menu--button {
     border: 1px solid var(--textclr);
     color: black;
-    padding: 11px 25px;
+    padding: 9px 25px;
     background-color: var(--textclr);
     border-radius: 20px;
     outline: none;
@@ -266,5 +272,8 @@
     background-color: rgba(253, 22, 22, 0.8);
     color: white;
     font-weight: 600;
+  }
+  .dontdisplay {
+    display: inline;
   }
 }
