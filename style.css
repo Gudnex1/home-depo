@@ -164,6 +164,32 @@
     border-radius: 20px;
     width: 40%;
   }
+  .animates-gradient {
+    background-image: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 1) 0%,
+      rgb(233, 233, 233) 30%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 400% 400%;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 6s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 }
 @layer landing {
   .landing--footer {
@@ -215,7 +241,11 @@
   }
   .logo--large {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .logo--large--text {
+    font-size: 1.3rem;
   }
   .logo--mobile {
     display: none;
@@ -223,7 +253,7 @@
   .menu--button {
     border: 1px solid var(--textclr);
     color: black;
-    /* padding: 7px 20px; */
+    padding: 11px 25px;
     background-color: var(--textclr);
     border-radius: 20px;
     outline: none;
@@ -235,5 +265,6 @@
     cursor: pointer;
     background-color: rgba(253, 22, 22, 0.8);
     color: white;
+    font-weight: 600;
   }
 }
