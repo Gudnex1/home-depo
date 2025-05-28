@@ -23,7 +23,7 @@
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      height: 100vh;
+      height: 110vh;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -187,13 +187,19 @@
     gap: 20px;
   }
   .center--text {
-    font-size: 4rem;
-    line-height: 5rem;
+    font-size: 3.5rem;
+    line-height: 4.5rem;
   }
   .center h5 {
     line-height: 1.7rem;
     padding-inline: 5px;
     max-width: 850px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+  }
+  .logo--large {
+    display: block;
+  }
+  .logo--mobile {
+    display: none;
   }
 }
