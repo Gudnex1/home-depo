@@ -61,7 +61,7 @@
     display: flex;
     justify-content: space-between;
     padding-inline: 20px;
-    padding-block: 10px 0px;
+    padding-block: 10px 20px;
     align-items: center;
   }
   nav ul {
@@ -70,10 +70,6 @@
   }
   nav ul li a {
     color: var(--textclr);
-  }
-  .logo--text {
-    font-weight: 600;
-    font-size: 1.2rem;
   }
   .menu--button {
     border: 1px solid var(--textclr);
@@ -93,15 +89,7 @@
   .logo--large {
     display: none;
   }
-  .logo {
-    width: 56px;
-    height: auto;
-  }
-  .logo-text {
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    fill: white;
-  }
+
   .house {
     fill: white;
     }
@@ -226,7 +214,8 @@
     font-size: 1.5rem;
   }
   .logo--large {
-    display: block;
+    display: flex;
+    align-items: center;
   }
   .logo--mobile {
     display: none;
