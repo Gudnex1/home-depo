@@ -1,6 +1,7 @@
 @layer base {
   :root {
     --textclr: #ffffff;
+    --redclr: rgb(255, 27, 27);
     html {
       box-sizing: border-box;
     }
@@ -20,7 +21,6 @@
     .wrapper {
       color: var(--textclr);
       background-image: url("./images/bg_img.png");
-      /* background-attachment: fixed; */
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -28,6 +28,9 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+    }
+    @keyframes background-image {
+        to (scale)
     }
     ul {
       list-style-type: none;
@@ -72,20 +75,54 @@
   nav ul li a {
     color: var(--textclr);
   }
-  .menu--button {
-    border: 1px solid var(--textclr);
-    color: black;
-    padding: 7px 12px;
-    background-color: var(--textclr);
-    border-radius: 20px;
-    outline: none;
+.btn {
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
     border: none;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease-in-out;
+    font-size: 1rem;
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    color: var(--redclr);
   }
-  .menu--button:hover {
-    cursor: pointer;
-    background-color: rgba(253, 22, 22, 0.8);
-    color: white;
+  
+  .btn:hover {
+    box-shadow: 0 0 20px 0px #2e2e2e3a;
+  }
+  
+  .btn .icon {
+    position: absolute;
+    height: 20px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+  }
+  
+  .btn .text {
+    transform: translateX(45px);
+  }
+  
+  .btn:hover .icon {
+    width: 125px;
+  }
+  
+  .btn:hover .text {
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  
+  .btn:focus {
+    outline: none;
+  }
+  
+  .btn:active .icon {
+    transform: scale(0.85);
   }
   .logo--large {
     display: none;
@@ -103,7 +140,6 @@
   .house {
     fill: white;
   }
- 
 }
 @layer texts {
   .center {
@@ -117,9 +153,9 @@
     max-width: 1200px;
     width: 100%;
     text-align: center;
-    animation:  fade-out linear;
+    animation: fade-out linear;
     animation-timeline: view();
-    animation-range: exit -100px;
+    animation-range: exit -75px;
   }
   .center--text {
     font-family: "Indie Flower", cursive;
@@ -170,7 +206,9 @@
     width: 40%;
   }
   @keyframes fade-out {
-    to { opacity: 0;}
+    to {
+      opacity: 0;
+    }
   }
 }
 @layer landing {
@@ -179,7 +217,7 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 20px;
-    animation:  fade-out linear;
+    animation: fade-out linear;
     animation-timeline: view();
     animation-range: exit -400px;
   }
