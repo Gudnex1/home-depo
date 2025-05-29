@@ -28,9 +28,9 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-    }
-    @keyframes background-image {
-        to (scale)
+      /* animation: scale linear forwards;
+      animation-timeline: view();
+      animation-range: exit 350px; */
     }
     ul {
       list-style-type: none;
@@ -162,7 +162,6 @@
     animation: fade-out linear;
     animation-timeline: view();
     animation-range: exit -250px;
-    border: 1px solid;
   }
   .center--text {
     font-family: "Indie Flower", cursive;
@@ -255,6 +254,16 @@
   .dontdisplay {
     display: none;
   }
+  /* @keyframes scale {
+    25% {
+        opacity: 0.7;
+    }
+    85%, 100% {
+        opacity: 1;
+        scale: 1.3;
+    }
+
+  } */
 }
 @media (min-width: 768px) {
   .mobile {
