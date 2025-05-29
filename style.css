@@ -103,6 +103,7 @@
     justify-content: center;
     align-items: center;
     transition: all 0.5s;
+    scale: .8;
   }
   
   .btn .text {
@@ -110,7 +111,7 @@
   }
   
   .btn:hover .icon {
-    width: 105px;
+    width: 100px;
   }
   
   .btn:hover .text {
@@ -160,7 +161,8 @@
     text-align: center;
     animation: fade-out linear;
     animation-timeline: view();
-    animation-range: exit -75px;
+    animation-range: exit -250px;
+    border: 1px solid;
   }
   .center--text {
     font-family: "Indie Flower", cursive;
@@ -284,23 +286,6 @@
   .logo--mobile {
     display: none;
   }
-  .menu--button {
-    border: 1px solid var(--textclr);
-    color: black;
-    padding: 9px 25px;
-    background-color: var(--textclr);
-    border-radius: 20px;
-    outline: none;
-    border: none;
-    transition: all 0.3s ease;
-    width: 100%;
-  }
-  .menu--button:hover {
-    cursor: pointer;
-    background-color: rgba(253, 22, 22, 0.8);
-    color: white;
-    font-weight: 600;
-  }
   .dontdisplay {
     display: inline;
   }
@@ -332,6 +317,7 @@
     justify-content: center;
     align-items: center;
     transition: all 0.5s;
+    scale: 1;
   }
   
   .btn .text {
@@ -340,5 +326,11 @@
   
   .btn:hover .icon {
     width: 125px;
+  }
+  .center {
+    animation-range: exit -90px;
+  }
+  .landing--footer {
+    animation-range: exit -200px;
   }
 }
