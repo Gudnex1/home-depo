@@ -226,6 +226,7 @@
 		opacity: 1;
 	}
 }
+
 }
 @layer landing {
   .landing--footer {
@@ -271,7 +272,6 @@
 
 
   } 
-}
 @media (min-width: 768px) {
   .mobile {
     display: block;
